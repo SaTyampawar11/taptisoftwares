@@ -1,0 +1,2852 @@
+@import url('https://fonts.googleapis.com/css2?family=Labrada:wght@200&family=Lora:ital@1&family=Playfair+Display:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    font-family: 'Lora', serif;
+}
+
+#home{
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   overflow: hidden;
+   background-color: azure;
+}
+
+#home #nav{
+    position: fixed;
+    gap: 30px;
+    width: 100%;
+    height: 12%;
+    border-bottom: 1px solid black;
+    background-color: azure;
+    z-index: 9999999;
+    top: 0;
+}
+
+#nav img{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 18%;
+    height: 76%;
+}
+
+#nav #text{
+    display: flex;
+    gap: 40px;
+    margin-left: 48%;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+#nav  a{
+    font-size: 1.6vw;
+    color: black;
+    text-decoration: none;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    font-family: 'Lora', serif;
+}
+
+#nav #text a:hover{
+    color: blue;
+    border-bottom: 3px solid greenyellow;
+}
+
+#nav #contect{
+    position: absolute;
+    top: 30%;
+    left: 90%;
+    width: 9%;
+    height: 40%;
+    border: 1.5px solid black;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#contect a{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+}
+
+#contect #blue{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(53, 83, 255);
+    border-radius: 30px;
+    left: -100%;
+    top: 0;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1.5s
+}
+
+#sidebar{
+    position: fixed;
+    width: 11%;
+    height: 50%;
+    left: 95%;
+    top: 28%;
+    z-index: 99999999;
+}
+#sidebar i{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    color: white;
+}
+#fb{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 16.6%;
+    background-color: #3c5a98;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+#twitter{
+    position: absolute;
+    top: 16.6%;
+    left: 0%;
+    width: 100%;
+    height: 16.6%;
+    background-color: #1ea1f2;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#message{
+    position: absolute;
+    top: 33.2%;
+    left: 0%;
+    width: 100%;
+    height: 16.6%;
+    background-color: #0184ff;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#whatsapp{
+    position: absolute;
+    top: 49.86%;
+    left: 0%;
+    width: 100%;
+    height: 16.6%;
+    background-color: #4ec248;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#in{
+    position: absolute;
+    top: 66.46%;
+    left: 0%;
+    width: 100%;
+    height: 16.6%;
+    background-color: #0177b5;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#pintrest{
+    position: absolute;
+    top: 83.06%;
+    left: 0%;
+    width: 100%;
+    height: 16.6%;
+    background-color: #cb2128;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+#btmnav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    border-top: 1px solid black;
+}
+
+#btmnav h5{
+    position: absolute;
+    left: 8%;
+    color: blue;
+    font-size: 22px;
+}
+
+#btmnav a{
+    text-decoration: none;
+    color: black;
+}
+
+#btmnav #icon{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    left: 84%;
+}
+
+#btmnav #icon i{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#home button:hover{
+    background-color: white;
+    color: #000;
+}
+#home #prt1{
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    top: 10%;
+    left: 4%;
+    font-family: 'Lora', serif;
+}
+
+#home #prt1 h1{
+    position: absolute;
+    text-transform: uppercase;
+    top: 28%;
+    left: 4%;
+    color: black;
+    font-size: 60px;
+}
+
+#home #prt1 h3{
+    position: absolute;
+    text-transform: uppercase;
+    top: 43%;
+    left: 4%;
+    color: red;
+    font-size: 40px;
+}
+#home #prt1 p{
+    position: absolute;
+    top: 54%;
+    left: 4%;
+    color: black;
+    font-size: 26px;
+}
+
+#home #prt1 button{
+    position: absolute;
+    top: 72%;
+    left: 4%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #059bff;
+    border: 1px solid black;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+#prt1 img{
+    position: absolute;
+    width: 40%;
+    height: 87%;
+    left: 55%;
+    top: 10%;
+}
+
+#home #prt2{
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    top: 14%;
+    left: 100%;
+    font-family: 'Lora', serif;
+}
+
+#home #prt2 h1{
+    position: absolute;
+    text-transform: uppercase;
+    top: 26%;
+    left: 49%;
+    color: black;
+    font-size: 50px;
+}
+
+#home #prt2 h3{
+    position: absolute;
+    text-transform: uppercase;
+    top: 38%;
+    left: 49%;
+    color: red;
+    font-size: 40px;
+}
+#home #prt2 p{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    color: black;
+    font-size: 26px;
+}
+
+#home #prt2 button{
+    position: absolute;
+    top: 70%;
+    left: 49%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #059bff;
+    border: 1px solid black;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+#prt2 img{
+    position: absolute;
+    width: 40%;
+    height: 87%;
+    left: 5%;
+    top: 7%;
+}
+
+#home #prt3{
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    top: 0%;
+    left: 100%;
+    font-family: 'Lora', serif;
+}
+
+#home #prt3 h1{
+    position: absolute;
+    text-transform: uppercase;
+    top: 30%;
+    left: 4%;
+    color: black;
+    font-size: 50px;
+}
+
+#home #prt3 h3{
+    position: absolute;
+    text-transform: uppercase;
+    top: 44%;
+    left: 4%;
+    color: red;
+    font-size: 40px;
+}
+#home #prt3 p{
+    position: absolute;
+    top: 57%;
+    left: 4%;
+    color: black;
+    font-size: 26px;
+}
+
+#home #prt3 button{
+    position: absolute;
+    top: 80%;
+    left: 4%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #059bff;
+    border: 1px solid black;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+#prt3 img{
+    position: absolute;
+    width: 40%;
+    height: 87%;
+    left: 55%;
+    top: 26%;
+}
+
+#home #prt4{
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    top:14%;
+    left: 100%;
+    font-family: 'Lora', serif;
+}
+
+#home #prt4 h1{
+    position: absolute;
+    text-transform: uppercase;
+    top: 26%;
+    left: 49%;
+    color: black;
+    font-size: 40px;
+}
+
+#home #prt4 h3{
+    position: absolute;
+    text-transform: uppercase;
+    top: 38%;
+    left: 49%;
+    color: red;
+    font-size: 45px;
+    white-space: nowrap;
+}
+#home #prt4 p{
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    color: black;
+    font-size: 26px;
+}
+
+#home #prt4 button{
+    position: absolute;
+    top: 70%;
+    left: 49%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    background-color: #059bff;
+    border: 1px solid black;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+#prt4 img{
+    position: absolute;
+    width: 40%;
+    height: 87%;
+    left: 5%;
+    top: 7%;
+    filter: brightness(1);
+}
+
+
+#second{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background:linear-gradient(#0184ffab,#009dffd9,#0184ffa2) ;
+    font-family: 'Lora', serif;
+}
+#second #circle{
+    position: absolute;
+    width: 28%;
+    height: 55%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(232, 21, 21, 0.808),rgb(16, 16, 244),rgb(231, 47, 255),rgba(255, 255, 0, 0.797),rgb(149, 241, 10),rgb(251, 44, 130),rgb(255, 61, 61));
+    border-radius: 50%;
+    z-index: 999999;
+}
+
+#second #circle #smlcircle{
+    position: absolute;
+    width: 92%;
+    height: 92%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 20px silver;
+    overflow: hidden;
+}
+#smlcircle img{
+    position: absolute;
+    width: 140%;
+    height: 150%;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+}
+#centerimg{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#centerimg img{
+    position: absolute;
+    width: 105%;
+    height: 75%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#second #line1{
+    position: absolute;
+    width: 13%;
+    height: 5px;
+    background-color: white;
+    top: 24%;
+    left: 34%;
+    transform: rotate(30deg)
+}
+#second #line2{
+    position: absolute;
+    width: 13%;
+    height: 5px;
+    background-color: white;
+    top: 50%;
+    left: 27%;
+}
+#second #line3{
+    position: absolute;
+    width: 13%;
+    height: 5px;
+    background-color: white;
+    top:74%;
+    left: 34%;
+    transform: rotate(-35deg)
+}
+#second #line4{
+    position: absolute;
+    width: 13%;
+    height: 5px;
+    background-color: white;
+    top: 24%;
+    left: 54%;
+    transform: rotate(-30deg)
+}
+#second #line5{
+    position: absolute;
+    width: 13%;
+    height: 5px;
+    background-color: white;
+    top: 50%;
+    left: 59%;
+}
+#second #line6{
+    position: absolute;
+    width: 13%;
+    height: 5px;
+    background-color: white;
+    top:74%;
+    left: 54%;
+    transform: rotate(30deg)
+}
+
+#circle1{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    top: 12%;
+    left: 32%;
+}
+#circle1 img{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;  
+}
+#circle2{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    top: 44%;
+    left: 22%;
+}
+#circle2 img{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;  
+}
+#circle3{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    top: 77%;
+    left: 32%;
+}
+#circle3 img{
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    top: 48%;
+    left: 54%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;  
+}
+#circle4{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    top: 12%;
+    left: 63%;
+}
+#circle4 img{
+    position: absolute;
+    width: 60%;
+    height: 64%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;  
+}
+#circle5{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    top: 44%;
+    left: 71%;
+}
+#circle5 img{
+    position: absolute;
+    width: 95%;
+    height: 84%;
+    top: 54%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;  
+}
+#circle6{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border-radius: 50%;
+    top: 77%;
+    left: 64%;
+}
+#circle6 img{
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: cover;  
+}
+#second #text1{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+}
+#second #text2{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 34%;
+    left: -5.5%;
+}
+#second #text3{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 70%;
+    left: 2%;
+    
+}
+#second #text4{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    right: 0;
+}
+#second #text5{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 34%;
+    right: -3%;
+}
+#second #text6{
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 70%;
+    right: -1%;
+}
+#second h1{
+    position: absolute;
+    font-size: 35px;
+    color: #000;
+    left: 17%;
+    top: 13%;
+}
+#second #text1 p{
+    position: absolute;
+    top: 54%;
+}
+#second p{
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    left: 13%;
+    top: 36%;
+}
+#second #text2 h1{
+    position: absolute;
+    font-size: 35px;
+    color: #000;
+    left: 26%;
+    top: 12%;
+    white-space: nowrap;
+}
+#second #text2 p{
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    left: 24%;
+    top: 36%;
+}
+
+#text4 h1{
+    position: absolute;
+    font-size: 35px;
+    color: #000;
+    left: 3%;
+    top: 12%;
+    white-space: nowrap;
+}
+#second #text4 p{
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    left: 10%;
+    top: 36%;
+}
+#second #text5 p{
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    left: 15%;
+    top: 36%;
+}
+#text6 h1{
+    position: absolute;
+    font-size: 35px;
+    color: #000;
+    left: 3%;
+    top: 12%;
+    white-space: nowrap;
+}
+#second #text6 p{
+    position: absolute;
+    font-size: 23px;
+    color: #fff;
+    left: 5%;
+    top: 36%;
+}
+#thrid{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+#thrid #text{
+    position: absolute;
+    width: 60%;
+    height: 90%;
+    top: 5%;
+}
+
+#thrid #text h1{
+    position: absolute;
+    left: 6%;
+    top: 12%;
+    font-size: 45px;
+    text-transform: capitalize;
+    border-bottom: 4px solid red;
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+
+#thrid #text h2{
+    position: absolute;
+    top: 24%;
+    left: 15%;
+}
+
+#thrid #text h3{
+    position: absolute;
+    left: 6%;
+    top: 42%;
+    font-size: 49px;
+    text-transform: capitalize;
+    border-bottom: 4px solid red;
+    -webkit-text-stroke: 1px  black;
+    color: white;
+}
+
+#thrid #text h4{
+    position: absolute;
+    top: 54%;
+    left: 15%;
+    font-size: 25px
+}
+
+#thrid #text button{
+    position: absolute;
+    top: 90%;
+    left: 72%;
+    padding: 8px 20px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#thrid button:hover{
+    background-color: #0184ff;
+    color: aliceblue;
+}
+
+#thrid img{
+    position: absolute;
+    width: 35%;
+    height: 55%;
+    top: 25%;
+    left: 58.5%;
+}
+
+#fourth{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(172, 255, 47, 0.867),rgba(166, 255, 0, 0.566),rgba(172, 255, 47, 0.884));
+}
+
+#fourth #left{
+    position: absolute;
+    top: 5%;
+    width: 55%;
+    height: 90%;
+    background-image: url(https://images.unsplash.com/photo-1649686888787-217611fb463b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+#left #overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000063;
+}
+
+#navbar{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 2%;
+    z-index: 9999;
+}
+
+#navbar #circle {
+    position: absolute;
+    width: 80px;
+    height: 80px ;
+    border-radius: 50%;
+    left: 1%;
+    overflow: hidden;
+    background: linear-gradient(rgba(172, 255, 47, 0.867),rgba(166, 255, 0, 0.566),rgba(172, 255, 47, 0.884));
+}
+
+#navbar #circle h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: blue;
+    font-size: 37px;
+}
+
+#navbar h5{
+    position: absolute;
+    top: 16%;
+    left: 11.5%;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#navbar #links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 47%;
+    top: 25%;
+}
+
+#links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+#left h1{
+    position: absolute;
+    left: 2%;
+    color: black;
+    top: 33%;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #fff;
+    z-index: 9999;
+}
+
+#left p{
+    position: absolute;
+    left: 2%;
+    color: black;
+    top: 65%;
+    font-size: 22px;
+    text-transform: capitalize;
+    color: #fff;
+    z-index: 9999;
+}
+
+#left button{
+    position: absolute;
+    top: 82%;
+    left: 4%;
+    padding: 10px 20px;
+    color: #1ea1f2;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 18px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    z-index: 9999;
+}
+#left #call{
+    position: absolute;
+    top: 82%;
+    left: 70%;
+    width: 23%;
+    height: 7%;
+    border-radius: 18px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    z-index: 9999;
+}
+
+#left button:hover{
+    background-color: #0184ff;
+    color: aliceblue;
+}
+
+#left img{
+    position: absolute;
+    width: 23%;
+    height: 25%;
+    top: 30%;
+    left: 49%;
+    z-index: 9999;
+}
+
+#left h3{
+    position: absolute;
+    left: 70%;
+    top: 35%;
+    color: red;
+    font-size: 35px;
+    border-bottom: 3px solid red;
+    z-index: 9999;
+}
+
+#left h3 span{
+    color: #4ec248;
+}
+
+#left>h5{
+    position: absolute;
+    left: 68%;
+    top: 42%;
+    font-size: 30px;
+    z-index: 9999;
+    color: #fff;
+    white-space: nowrap;
+    opacity: .8;
+}
+
+#left h6{
+    position: absolute;
+    left: 69%;
+    top: 48%;
+    font-size: 18px;
+    z-index: 9999;
+    color: #fff;
+    white-space: nowrap;
+    opacity: .8;
+}
+
+#fourth #right{
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    width: 45%;
+    height: 90%;
+}
+
+#right h1{
+    position: absolute;
+    color: red;
+    font-size: 35px;
+    top: 20%;
+    left: 6%;
+    text-transform: uppercase;
+}
+
+#right p{
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    top: 30%;
+    left: 6%;
+    text-transform: capitalize;
+}
+
+#right h3{
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    color: black;
+    font-size: 30px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#right h4{
+    position: absolute;
+    top: 59.5%;
+    left: 27%;
+    color: black;
+    font-size: 30px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#right h5{
+    position: absolute;
+    top: 70%;
+    left: 27%;
+    color: black;
+    font-size: 30px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#right button{
+     position: absolute;
+    top: 85%;
+    left: 62%;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: red;
+    font-size: 18px;
+    border-radius: 18px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#right button:hover{
+    background-color: red;
+    color: aliceblue;
+}
+
+#right #one{
+    position: absolute;
+    top: 50.5%;
+    left: 20%;
+    color: #000;
+    font-size: 30px;
+}
+#right #two{
+    position: absolute;
+    top: 60.5%;
+    left: 20%;
+    color: #000;
+    font-size: 30px;
+}
+#right #three{
+    position: absolute;
+    top: 70.5%;
+    left: 20%;
+    color: #000;
+    font-size: 30px;
+}
+
+#five{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.586),whitesmoke,rgba(255, 255, 255, 0.652));
+}
+
+#five>h1{
+    position: absolute;
+    font-size: 40px;
+    left: 43%;
+    top: 5%;
+    border-bottom: 3px solid red;
+}
+
+#five>h3{
+    position: absolute;
+    font-size: 30px;
+    top: 15%;
+    left: 34%;
+    color: blue;
+}
+
+#five>h5{
+    position: absolute;
+    font-size: 24px;
+    top: 22%;
+    left: 30%;
+    color: black;
+    text-align: center;
+}
+
+#five #bx1{
+    position: absolute;
+    width: 40%;
+    height: 8%;
+    background-color:rgba(232, 217, 226, 0.703);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    top: 33%;
+    left: 24%;
+    border: .5px solid black;
+    border-radius: 15px;
+}
+
+#bx1 p{
+    top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#five #bx2{
+    position: absolute;
+    width: 40%;
+    height: 8%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    background-color:rgba(232, 217, 226, 0.703);
+    top: 43%;
+    left: 34%;
+    border: .5px solid black;
+    border-radius: 15px;
+}
+#bx2 p{
+    top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+#five #bx3{
+    position: absolute;
+    width: 40%;
+    height: 8%;
+    background-color:rgba(232, 217, 226, 0.703);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    top: 53%;
+    left: 23%;
+    border: .5px solid black;
+    border-radius: 15px;
+}
+#bx3 p{
+    top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+#five #bx4{
+    position: absolute;
+    width: 40%;
+    height: 14%;
+    background-color:rgba(232, 217, 226, 0.703);
+    top: 63%;
+    left: 34%;
+    border: .5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    border-radius: 15px;
+}
+#bx4 p{
+    top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+#five #bx5{
+    position: absolute;
+    width: 40%;
+    height: 14%;
+    background-color:rgba(232, 217, 226, 0.703);
+    top: 79%;
+    left: 23%;
+    border: .5px solid black;
+    border-radius: 15px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#bx5 p{
+    top: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+#five #circle1{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    width: 23%;
+    height: 43%;
+    background-color:rgba(244, 209, 230, 0.703) ;
+    border-radius: 50%;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    box-shadow: 10px 10px 10px 10px rgb(221, 193, 193);
+}
+#five #circle2{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 23%;
+    height: 43%;
+    background-color:rgba(244, 209, 230, 0.703) ;
+    border-radius: 50%;
+    box-shadow: 10px 10px 10px 10px rgb(216, 193, 221);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#five #circle1 h1{
+    position: absolute;
+    font-size: 35px;
+    color: red;
+    text-align: center;
+    top: 17%;
+    left: 10%;
+    border-bottom: 3px solid blue;
+}
+
+#five #circle1 p{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    top: 40%;
+    left: 1%;
+}
+
+#five #circle2 h1{
+    position: absolute;
+    font-size: 35px;
+    color: red;
+    text-align: center;
+    top: 17%;
+    left: 20%;
+    border-bottom: 3px solid blue;
+}
+
+#five #circle2 p{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    top: 40%;
+    left: 1%;
+}
+
+#six{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#six img{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    object-fit: cover;
+}
+
+#six #overlay{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    background-color: #0000006a;
+}
+#six #top{
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background-color: #1ea1f2;
+}
+#six #circle{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: -13%;
+    left: 0%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    pointer-events: none;
+}
+#six #top h1{
+    position: absolute;
+    left: 15%;
+    top: 5%;
+    color: whitesmoke;
+    font-size: 38px;
+    text-transform: capitalize;
+    border-bottom: 3px solid red;
+    font-family: none;
+}
+#six #top p{
+    position: absolute;
+    left: 15%;
+    top: 42%;
+    color: black;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+#six #top button{
+    padding: 8px 20px;
+    position: absolute;
+    left: 74%;
+    top: 38%;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    cursor: pointer;
+}
+
+#top button:hover{
+    background-color: #cb2128;
+    color: white;
+}
+#leftbox{
+    position: absolute;
+    left: 12%;
+    top: 24%;
+    width: 30%;
+    height: 70%;
+    background-color: #1ea1f2c5;
+    z-index: 99999;
+}
+
+#leftbox h1{
+    position: absolute;
+    left: 13%;
+    top: 5%;
+    font-size: 34px;
+    color: white;
+    border-bottom: 3px solid red;
+}
+
+#leftbox p{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+#six #leftbox button{
+    padding: 8px 20px;
+    position: absolute;
+    left: 34%;
+    top: 88%;
+    border-radius: 20px;
+    font-size: 18px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    cursor: pointer;
+}
+
+#leftbox button:hover{
+    background-color: #cb2128;
+    color: white;
+}
+#six #text{
+    position: absolute;
+    width: 35%;
+    height: 70%;
+    left: 54%;
+    top: 25%;
+    z-index: 999999;
+}
+
+#six #text h1{
+    position: absolute;
+    left: 2%;
+    top: 5%;
+    font-size: 34px;
+    color: white;
+    border-bottom: 3px solid red;
+}
+
+#six #text p{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    color: white;
+    font-size: 22px;
+}
+#six #text button{
+    position: absolute;
+    font-size: 18px;
+    top: 70%;
+    left: 60%;
+    padding: 8px 20px;
+    border-radius: 19px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    cursor: pointer;
+}
+
+#six #text button:hover{
+    background-color: red;
+    color: aliceblue;
+}
+
+#page7{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(182, 189, 255),lightblue,rgba(144, 238, 144, 0.612));
+    overflow: hidden;
+}
+
+#page7>h1{
+    position: absolute;
+    left: 7%;
+    font-size: 40px;
+    top: 3%;
+    text-transform: capitalize;
+    border-bottom: 4px solid red;
+}
+
+#page7 #box1{
+    position: absolute;
+    width: 50%;
+    height: 18%;
+    top: 15%;
+    left: 2%;
+    border-radius: 15px ;
+    background-color: white;
+    border: 2px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page7 #box1 h5{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 8%;
+    text-align: center;
+    font-weight: 650;
+}
+
+#page7 #box2{
+    position: absolute;
+    width: 50%;
+    height: 9%;
+    top: 36%;
+    left: 9%;
+    border-radius: 20px ;
+    background-color: white;
+    border: 2px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+
+#page7 #box2 h5{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 22%;
+    text-align: center;
+    font-weight: 650;
+}
+#page7 #box3{
+    position: absolute;
+    width: 50%;
+    height: 14%;
+    top: 48%;
+    left: 2%;
+    border-radius: 15px ;
+    background-color: white;
+    border: 2px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page7 #box3 h5{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 10%;
+    text-align: center;
+    font-weight: 650;
+}
+#page7 #box4{
+    position: absolute;
+    width: 50%;
+    height: 14%;
+    top: 64%;
+    left: 9%;
+    border-radius: 15px ;
+    background-color: white;
+    border: 2px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page7 #box4 h5{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 10%;
+    text-align: center;
+    font-weight: 650;
+}
+#page7 #box5{
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 81%;
+    left: 2%;
+    border-radius: 15px ;
+    background-color: white;
+    border: 2px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page7 #box5 h5{
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    top: 10%;
+    text-align: center;
+    font-weight: 650;
+}
+
+#page7 button{
+    position: absolute;
+    font-size: 18px;
+    top: 93%;
+    left: 20%;
+    padding: 8px 20px;
+    border-radius: 19px;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+}
+
+#page7 button:hover{
+    background-color: white;
+    color: black;
+}
+
+#page7 #circle1{
+    position: absolute;
+    width: 15%;
+    height: 28%;
+    left: 63%;
+    top: 2%;
+    border-radius: 50%;
+    background:linear-gradient(whitesmoke,rgba(234, 212, 234, 0.147));
+    border: 1px solid black;
+    z-index: 999;
+    box-shadow: 10px 10px 10px 10px rgba(236, 109, 236, 0.292);
+}
+#page7 #circle1 h2{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 10%;
+    left: 27%;
+    font-size: 37px;
+}
+
+#page7 #circle1 h6{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 35%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 500;
+}
+#page7 #circle2{
+    position: absolute;
+    width: 15%;
+    height: 28%;
+    left: 74%;
+    top: 25%;
+    border-radius: 50%;
+    background:linear-gradient(whitesmoke,rgba(234, 212, 234, 0.147));
+    border: 1px solid black;
+    z-index: 999;
+    box-shadow: 10px 10px 10px 10px rgba(236, 109, 236, 0.292);
+}
+#page7 #circle2 h2{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 10%;
+    left: 27%;
+    font-size: 37px;
+}
+
+#page7 #circle2 h6{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 35%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 500;
+}
+#page7 #circle3{
+    position: absolute;
+    width: 15%;
+    height: 28%;
+    left: 63%;
+    top: 48%;
+    border-radius: 50%;
+    background:linear-gradient(whitesmoke,rgba(234, 212, 234, 0.147));
+    border: 1px solid black;
+    z-index: 999;
+    box-shadow: 10px 10px 10px 10px rgba(236, 109, 236, 0.292);
+}
+#page7 #circle3 h2{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 10%;
+    left: 27%;
+    font-size: 37px;
+}
+
+#page7 #circle3 h6{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 35%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 500;
+}
+#page7 #circle4{
+    position: absolute;
+    width: 15%;
+    height: 28%;
+    left: 74%;
+    top: 71%;
+    border-radius: 50%;
+    background:linear-gradient(whitesmoke,rgba(234, 212, 234, 0.147));
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px 10px rgba(236, 109, 236, 0.292);
+}
+#page7 #circle4 h2{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 10%;
+    left: 38%;
+    font-size: 37px;
+}
+
+#page7 #circle4 h6{
+    position: absolute;
+    text-align: center;
+    color: #000;
+    top: 35%;
+    left: 13%;
+    font-size: 40px;
+    font-weight: 500;
+}
+#page7 #line1{
+    position: absolute;
+    width: 25%;
+    height: 1.5px;
+    background-color: black;
+    left: 78%;
+    top: 15%;
+}
+#page7 #line2{
+    position: absolute;
+    width: 25%;
+    height: 1.5px;
+    background-color: black;
+    left: 89%;
+    top: 38.5%;
+}
+#page7 #line3{
+    position: absolute;
+    width: 25%;
+    height: 1.5px;
+    background-color: black;
+    left: 78%;
+    top: 62%;
+}
+#page7 #line4{
+    position: absolute;
+    width: 25%;
+    height: 1.5px;
+    background-color: black;
+    left: 89%;
+    top: 85%;
+}
+
+#page8{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background:linear-gradient(rgb(239, 236, 205), rgb(227, 222, 212),rgb(248, 235, 197));
+    overflow: hidden;
+}
+#page8 #btmbar{
+    position: absolute;
+    width: 100%;
+    height: 14%;
+    bottom: 0;
+    background-color: #1ea1f2;
+}
+#page8 i{
+    padding: 17px 17px;
+    background-color: #1ea1f2;
+    color: white;
+    border-radius: 50%;
+    font-size: 26px;
+    cursor: pointer;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#page8 #icon1{
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+#page8 #icon2{
+    position: absolute;
+    top: 25%;
+    left: 6%;
+    color: white;
+}
+#page8 #icon3{
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    color: white;
+}
+#page8 #icon4{
+    position: absolute;
+    top: 55%;
+    left: 6%;
+    color: white;
+}
+#page8 #icon5{
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    color: white;
+}
+#page8 #line1{
+    position: absolute;
+    width: 6%;
+    height: 5px;
+    background-color:#1ea1f2 ;
+    top: 14.5%;
+}
+#page8 #line2{
+    position: absolute;
+    width: 6%;
+    height: 5px;
+    background-color:#1ea1f2 ;
+    top: 29.5%;
+}
+#page8 #line3{
+    position: absolute;
+    width: 6%;
+    height: 5px;
+    background-color:#1ea1f2 ;
+    top: 44.5%;
+}
+#page8 #line4{
+    position: absolute;
+    width: 6%;
+    height: 5px;
+    background-color:#1ea1f2 ;
+    top: 60%;
+}
+#page8 #line5{
+    position: absolute;
+    width: 6%;
+    height: 5px;
+    background-color:#1ea1f2 ;
+    top: 74.5%;
+}
+
+#page8 #about{
+    position: absolute;
+    top: 12%;
+    left: 15%;
+    width: 25%;
+    height: 70%;
+}
+
+#page8 #about h3{
+    position: absolute;
+    top: 3%;
+    left: 20%;
+    font-size: 38px;
+    color: #000;
+    border-bottom: 4px solid red;
+}
+
+#page8 #about p{
+    position: absolute;
+    top: 21%;
+    font-size: 26px;
+    color: black;
+    text-align: center;
+    font-weight: 550;
+}
+
+#page8 #links{
+    position: absolute;
+    width: 24%;
+    height: 60%;
+    top: 12%;
+    left: 45%;
+}
+#page8 #links h3{
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    font-size: 38px;
+    color: #000;
+    border-bottom: 4px solid red;
+}
+#page8 #links #box1{
+    position: absolute;
+    width: 90%;
+    height: 12%;
+    top: 28%;
+    left: 0%;
+    border-bottom: 1.5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page8 #links #box2{
+    position: absolute;
+    width: 90%;
+    height: 14%;
+    top: 40%;
+    left: 0%;
+    border-bottom: 1.5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page8 #links #box3{
+    position: absolute;
+    width: 90%;
+    height: 14%;
+    top: 54%;
+    left: 0%;
+    border-bottom: 1.5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page8 #links #box4{
+    position: absolute;
+    width: 90%;
+    height: 14%;
+    top: 68%;
+    left: 0%;
+    border-bottom: 1.5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+}
+#page8 #links h2{
+    position: absolute;
+    left: 6%;
+    top: 20%;
+    font-size: 27px;
+    color: black;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+#page8 #help{
+    position: absolute;
+    width: 25%;
+    height: 50%;
+    top: 13%;
+    left: 73%;
+}
+#page8 #help h5{
+    position: absolute;
+    top: 3%;
+    left: 4%;
+    font-size: 38px;
+    color: #000;
+    border-bottom: 4px solid red;
+
+}
+#page8 #help #box1{
+    position: absolute;
+    width: 80%;
+    height: 14%;
+    top: 33.5%;
+    left: 0%;
+    border-bottom: 1.5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+#page8 #help #box2{
+    position: absolute;
+    width: 80%;
+    height: 14%;
+    top: 52%;
+    left: 0%;
+    border-bottom: 1.5px solid black;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+
+#page8 #help h3{
+    position: absolute;
+    left: 0%;
+    top: 25%;
+    font-size: 25px;
+    color: black;
+    font-weight: 550;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+#page8 #btmbar{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#page8 #btmbar span{
+    color: red;
+    font-size: 18px;
+}
+
+@media(max-width: 600px){
+    #main{
+        overflow: hidden;
+    }
+    #home{
+        width: 100%;
+        height: 100vh;
+    }
+    #home #nav{
+        height: 7%;
+        position: fixed;
+    }
+    #home #nav img{
+        width: 30%;
+    }
+    #home #nav #text{
+        width: 40%;
+        gap: 10px;
+        margin-left: 149px;
+    }
+    #home #nav #text a{
+        font-size: 11px;
+    }
+    #home #nav #contect{
+        padding: 7px 20px;
+        left: 88%;
+        top: 33%;
+    }
+    #home #nav #contect a{
+        font-size: 10px;
+    }
+
+    #home #sidebar{
+        position: fixed;
+        width: 26%;
+        left: 87%;
+    }
+    #home #btmnav{
+        top: 91%;
+        height: 5%;
+    }
+    #home #btmnav h5{
+        left: 2%;
+        font-size: 18px;
+    }
+    #home #btmnav #icon{
+        left: 65%;
+        gap: 12px;
+    }
+    #home #prt1{
+        width: 100%;
+        height: 90%;
+        top: 5%;
+    }
+    #home #prt1 img{
+        top: 0%;
+        left: 1%;
+        width: 90%;
+        height: 50%;
+    }
+    #home #prt1 h1{  
+        top: 48%;
+        left: -50px;
+        font-size: 45px;
+        text-align: center;
+    }
+    #home #prt1 h3{
+        top: 65%;
+        margin-left: 35px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #home #prt1 p{
+        top: 70%;
+        left: 1%;
+        font-size: 17px;
+        text-align: left;
+    }
+    #home #prt1 button{
+        top: 83%;
+        left: 30%;
+        font-size: 18px;
+        padding: 5px 15px;
+    }
+    #home #prt3{
+        width: 100%;
+        height: 90%;
+        top: 5%;
+    }
+    #home #prt3 img{
+        top: 2%;
+        left: 4%;
+        width: 100%;
+        height: 50%;
+    }
+    #home #prt3 h1{  
+        top: 51%;
+        left: 18px;
+        font-size: 35px;
+        text-align: center;
+    }
+    #home #prt3 h3{
+        top: 60%;
+        margin-left: 35px;
+        font-size: 20px;
+        text-align: center;
+    }
+    #home #prt3 p{
+        top: 65%;
+        left: 1%;
+        font-size: 17px;
+        text-align: left;
+    }
+    #home #prt3 button{
+        top: 83%;
+        left: 30%;
+        font-size: 18px;
+        padding: 5px 15px;
+    } 
+
+    #home #prt2{
+        width: 100%;
+        height: 90%;
+        top: 6%;
+    }
+    #home #prt2 img{
+        top: 43%;
+        left: 1%;
+        width: 90%;
+        height: 50%;
+    }
+    #home #prt2 h1{  
+        top: 2%;
+        left: -10px;
+        font-size: 41px;
+        text-align: center;
+    }
+    #home #prt2 h3{
+        top: 19%;
+        left: 13.5%;
+        font-size: 20px;
+        text-align: center;
+    }
+    #home #prt2 p{
+        top: 24%;
+        left: 4%;
+        font-size: 19px;
+        text-align: left;
+        z-index: 9999;
+    }
+    #home #prt2 button{
+        top: 38%;
+        left: 30%;
+        font-size: 18px;
+        padding: 5px 15px;
+    } 
+    #home #prt4{
+        width: 100%;
+        height: 90%;
+        top: 6%;
+    }
+    #home #prt4 img{
+        top: 44%;
+        left: 1%;
+        width: 90%;
+        height: 50%;
+    }
+    #home #prt4 h1{  
+        top: 2%;
+        left: -10px;
+        font-size: 35px;
+        text-align: center;
+    }
+    #home #prt4 h3{
+        top: 17%;
+        left: 8%;
+        font-size: 20px;
+        text-align: center;
+    }
+    #home #prt4 p{
+        top: 23%;
+        left: 4%;
+        font-size: 19px;
+        text-align: left;
+    }
+    #home #prt4 button{
+        top: 38%;
+        left: 30%;
+        font-size: 18px;
+        padding: 5px 15px;
+    } 
+    #second #circle{
+        width: 50%;
+        height: 25%;
+        top: 15%;
+        z-index: 9999;
+    }
+    #second #line1{
+        width: 30%;
+        height: 3px;
+        transform: rotate(0deg);
+        left: 0;
+        top: 15%;
+    }
+    #second #line2{
+        width: 30%;
+        height: 3px;
+        transform: rotate(0deg);
+        left: 72%;
+        top: 15%;
+    }
+    #second #line3{
+        opacity: 0;
+    }
+    #second #line4{
+        opacity: 0;
+    }
+    #second #line5{
+        opacity: 0;
+    }
+    #second #line6{
+        opacity: 0;
+    }
+    #second #circle1{
+        width: 50px;
+        height: 50px;
+        top: 27%;
+        left: 17%;
+    }
+    #second #circle2{
+        width: 50px;
+        height: 50px;
+        top: 27%;
+        left: 67%;
+    }
+    #second #circle3{
+        width: 50px;
+        height: 50px;
+        top: 49%;
+        left: 17%;
+    }
+    #second #circle4{
+        width: 50px;
+        height: 50px;
+        top: 49%;
+        left: 67%;
+    }
+    #second #circle5{
+        width: 50px;
+        height: 50px;
+        top: 71%;
+        left: 17%;
+    }
+    #second #circle6{
+        width: 50px;
+        height: 50px;
+        top: 71%;
+        left: 67%;
+    }
+    #second #text1{
+        width: 45%;
+        height: 16%;
+        top: 33%;
+    }
+    #second #text1 h1{
+        font-size: 16px;
+        left: 4%;
+        top: 3%;
+        text-align: center;
+    }
+    #second #text1 p{
+        font-size: 12px;
+        left: 3%;
+        top: 39%;
+        text-align: center;
+    }
+    #second #text2{
+        width: 45%;
+        height: 16%;
+        top: 33%;
+        left: 50%;
+    }
+    #second #text2 h1{
+        font-size: 16px;
+        left: 10%;
+        top: 9%;
+        text-align: center;
+    }
+    #second #text2 p{
+        font-size: 11px;
+        left: 3%;
+        top: 40%;
+        text-align: center;
+    }
+    #second #text3{
+        width: 45%;
+        height: 16%;
+        top: 56%;
+        left: 0%;
+    }
+    #second #text3 h1{
+        font-size: 15px;
+        left: 12%;
+        top: 5%;
+        text-align: center;
+    }
+    #second #text3 p{
+        font-size: 12px;
+        left: 3%;
+        top: 26%;
+        text-align: center;
+    }
+    #second #text4{
+        width: 45%;
+        height: 16%;
+        top: 56%;
+        left: 50%;
+    }
+    #second #text4 h1{
+        font-size: 15px;
+        left: 10%;
+        top: 5%;
+        text-align: center;
+    }
+    #second #text4 p{
+        font-size: 11px;
+        left: 3%;
+        top: 26%;
+        text-align: center;
+    }
+    #second #text5{
+        width: 45%;
+        height: 16%;
+        top: 78%;
+        left: 0%;
+    }
+    #second #text5 h1{
+        font-size: 15px;
+        left: 18%;
+        top: 3%;
+        text-align: center;
+    }
+    #second #text5 p{
+        font-size: 11px;
+        left: 3%;
+        top: 24%;
+        text-align: center;
+    }
+    #second #text6{
+        width: 45%;
+        height: 10%;
+        top: 78%;
+        left: 50%;
+    }
+    #second #text6 h1{
+        font-size: 15px;
+        left: 10%;
+        top: 3%;
+        text-align: center;
+    }
+    #second #text6 p{
+        font-size: 11px;
+        left: 3%;
+        top: 38%;
+        text-align: center;
+    }
+    #thrid #text{
+        width: 100%;
+        height: 55%;
+    }
+    #thrid #text h1{
+        top: -6%;
+        left: 1%;
+        font-size: 30px;
+    }
+    #thrid #text h2{
+        top: 7%;
+        left: 5%;
+        font-size: 13px;
+    }
+    #thrid #text h3{
+        top: 25%;
+        left: 1%;
+        font-size: 30px;
+    }
+    #thrid #text h4{
+        top: 38%;
+        left: 5%;
+        font-size: 15px;
+    }
+    #thrid #text button{
+        top: 81%;
+        left: 32%;
+        padding: 5px 15px;
+    }
+    #thrid img{
+        width: 90%;
+        height: 32%;
+        top: 60%;
+        left: 5%;
+    }
+    #fourth #left{
+        top: 3%;
+        width: 100%;
+        height: 50%;
+    }
+    #fourth #left #circle{
+        width: 60px;
+        height: 60px;
+    }
+    #fourth #left #circle h3{
+        font-size: 25px;
+        top: 45%;
+        left: 50%;
+    }
+    #fourth #left h5{
+        left: 21%;
+        font-size: 18px;
+    }
+    #fourth #left #links{
+        top: 600%;
+        left: 5%;
+        gap: 20px;
+    }
+    #fourth #left #links a{
+        font-size: 15px;
+    }
+    #fourth #left>h1{
+        font-size: 19px;
+        top: 22%;
+    }
+    #fourth #left>p{
+        font-size: 15px;
+        top: 45%;
+    }
+    #fourth button{
+        top: 68%;
+        padding: 5px 15px;
+    }
+    #fourth  #call{
+        top: 80%;
+        left: 4%;
+        width: 180px;
+        height: 35px;
+    }
+    #fourth #call button{
+        padding: 10px 20px;
+    }
+    #fourth #left img{
+        left: 55%;
+        top: 16%;
+    }
+    #fourth #left h3{
+        left: 75%;
+        top: 25%;
+        font-size: 15px;
+    }
+    #fourth #left>h5{
+       font-size: 11px;
+       left: 72%;
+       top: 32%;
+    }
+    #fourth #left>h6{
+        font-size: 10px;
+       left: 65%;
+       top: 37%;
+     }
+     #fourth #right{
+        height: 50%;
+        width: 100%;
+        top: 53%;
+        left: 0;
+     }
+     #fourth #right h1{
+        top: 5%;
+        font-size: 25px;
+     }
+     #fourth #right p{
+        font-size: 15px;
+        top: 26%;
+     }
+     #fourth #right h3{
+        top: 44%;
+        font-size: 20px;
+        left: 51%;
+     }
+     #fourth #right h4{
+        top: 54%;
+        font-size: 20px;
+        left: 51%;
+     }
+     #fourth #right h5{
+        top: 64%;
+        font-size: 20px;
+        left: 51%;
+     }
+     #fourth #right #one{
+        left: 43%;
+        font-size: 20px;
+        top: 45%;
+     }
+     #fourth #right #two{
+        left: 43%;
+        top: 55%;
+        font-size: 20px;
+     }
+     #fourth #right #three{
+        left: 43%;
+        top: 65%;
+        font-size: 20px;
+     }
+     #fourth #right button{
+        top: 80%;
+        left: 62%;
+        padding: 5px 15px;
+        font-size: 15px;
+     }
+     #five #circle1{
+        width: 160px;
+        height: 160px;
+        top: 3%;
+        left: 1%;
+     }
+     #five #circle1 h1{
+        font-size: 15px;
+        left: 13%;
+        top: 13%;
+     }
+     #five #circle1 p{
+        font-size: 11px;
+        left: 3%;
+        top: 28%;
+     }
+     #five #circle2{
+        width: 160px;
+        height: 160px;
+        top: 3%;
+        left: 51%;
+     }
+     #five #circle2 h1{
+        font-size: 15px;
+        left: 23%;
+        top: 13%;
+     }
+     #five #circle2 p{
+        font-size: 11px;
+        left: 3%;
+        top: 28%;
+     }
+     #five>h1{
+        top: 28%;
+        font-size: 30px;
+        left: 26%;
+     }
+     #five>h3{
+        font-size: 20px;
+        left: 3%;
+        top: 35%;
+        white-space: nowrap;
+     }
+     #five>h5{
+        font-size: 15px;
+        left: 2%;
+        top: 39%;
+     }
+     #five #bx1{
+        width: 64%;
+        height: 6%;
+        left: 2%;
+        top: 48%;
+     }
+     #five #bx2{
+        width: 64%;
+        height: 6%;
+        left: 27%;
+        top: 55%;
+     }
+     #five #bx3{
+        width: 64%;
+        height: 6%;
+        left: 2%;
+        top: 62%;
+     }
+     #five #bx4{
+        width: 64%;
+        height: 14%;
+        left: 27%;
+        top: 69.5%;
+     }
+     #five #bx5{
+        width: 64%;
+        height: 11%;
+        left: 2%;
+        top: 85%;
+     }
+     #five p{
+        font-size: 11px;
+     }
+     #six #top h1{
+        font-size: 20px;
+        left: 14%;
+        white-space: nowrap;
+     }
+     #six #top p{
+        font-size: 15px;
+        left: 2%;
+        top: 26%;
+        text-align: center;
+     }
+     #six #top button{
+        padding: 3px 15px;
+        left: 37%;
+        top: 80%;
+        font-size: 13px;
+     }
+     #six img{
+        width: 100%;
+        height: 80%;
+        top: 20%;
+     }
+     #six #leftbox{
+        width: 86%;
+        height: 36%;
+        top: 23%;
+        left: 7%;
+     }
+     #six #leftbox h1{
+        font-size: 22px;
+        left: 20%;
+     }
+     #six #leftbox p{
+        font-size: 13px;
+        top: 22%;
+        left: 1%;
+        text-align: center;
+     }
+     #six #leftbox button{
+        padding: 5px 15px;
+        left: 36%;
+        top: 82%;
+        font-size: 14px;
+     }
+     #six #text{
+        width: 85%;
+        height: 40%;
+        top: 60%;
+        left: 7%;
+     }
+     #six #text h1{
+        font-size: 24px;
+        left: 20%;
+     }
+     #six #text p{
+        font-size: 14px;
+        top: 22%;
+        left: 1%;
+        text-align: center;
+     }
+     #six #text button{
+        padding: 5px 15px;
+        left: 39%;
+        top: 77%;
+        font-size: 14px;
+     }
+     #page7>h1{
+        font-size: 25px;
+        top: 2%;
+        left: 2%;
+     }
+     #page7 #box1{
+        width: 95%;
+        height: 14%;
+        left: 5%;
+        top: 8.5%;
+     }
+     #page7 #box1 h5{
+        font-size: 12px;
+        top: 2%;
+     }
+     #page7 #box2{
+        width: 95%;
+        height: 6%;
+        left: 0%;
+        top: 24.3%;
+        border-radius: 17px;
+     }
+     #page7 #box2 h5{
+        font-size: 12px;
+        top: 10%;
+     }
+     #page7 #box3{
+        width: 95%;
+        height: 11%;
+        left: 5%;
+        top: 32%;
+     }
+     #page7 #box3 h5{
+        font-size: 12px;
+        top: 1%;
+     }
+     #page7 #box4{
+        width: 95%;
+        height: 8%;
+        left: 0%;
+        top: 44.4%;
+     }
+     #page7 #box4 h5{
+        font-size: 12px;
+        top: 5%;
+     }
+     #page7 #box5{
+        width: 95%;
+        height: 7.5%;
+        left: 5%;
+        top: 54%;
+     }
+     #page7 #box5 h5{
+        font-size: 12px;
+        top: 1%;
+     }
+     #page7 button{
+        padding: 5px 15px;
+        left: 40%;
+        top: 63.5%;
+        font-size: 13px;
+     }
+     #page7 #circle1{
+        width: 90px;
+        height: 90px;
+        left: 1%;
+        top: 69%;
+     }
+     #page7 #circle1 h2{
+        font-size: 20px;
+        left: 18%;
+     }
+     #page7 #circle1 h6{
+        font-size: 15px;
+        top: 45%;
+     }
+     #page7 #circle2{
+        width: 90px;
+        height: 90px;
+        left: 24%;
+        top: 78%;
+     }
+     #page7 #circle2 h2{
+        font-size: 20px;
+        left: 19%;
+     }
+     #page7 #circle2 h6{
+        font-size: 15px;
+        top: 45%;
+     }
+     #page7 #circle3{
+        width: 90px;
+        height: 90px;
+        left: 48%;
+        top: 69.5%;
+     }
+     #page7 #circle3 h2{
+        font-size: 20px;
+        left: 22%;
+        top: 8%;
+     }
+     #page7 #circle3 h6{
+        font-size: 15px;
+        top: 42%;
+        left: 15%;
+     }
+     #page7 #circle4{
+        width: 90px;
+        height: 90px;
+        left: 72%;
+        top: 78%;
+        z-index: 99999;
+     }
+     #page7 #circle4 h2{
+        font-size: 20px;
+        left: 35%;
+        top: 7%;
+     }
+     #page7 #circle4 h6{
+        font-size: 15px;
+        top: 41%;
+     }
+     #page7 #line1{
+        transform: rotate(90deg);
+        top: 90.5%;
+        left: -6.5%;
+        width: 40%;
+     }
+     #page7 #line2{
+        transform: rotate(90deg);
+        top: 99%;
+        left: 17%;
+        width: 40%;
+     }
+     #page7 #line3{
+        transform: rotate(90deg);
+        top: 90.5%;
+        left: 41%;
+        width: 40%;
+     }
+     #page7 #line4{
+        transform: rotate(90deg);
+        top: 99%;
+        left: 65%;
+        width: 40%;
+     }
+     #page8 #about{
+        width: 64%;
+        height: 37%;
+        top: 4%;
+        left: 24%;
+     }
+     #page8>i{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        font-size: 19px;
+     }
+     #page8 #about h3{
+        font-size: 23px;
+        top: 1%;
+        left: 25%;
+     }
+     #page8 #about p{
+        font-size: 13.5px;
+        top: 20%;
+        left: -2%;
+     }
+     #page8 #line1{
+        height: 3px;
+        top: 14%;
+     }
+     #page8 #line2{
+        height: 3px;
+        top: 29%;
+     }
+     #page8 #line3{
+        height: 3px;
+        top: 44%;
+     }
+     #page8 #line4{
+        height: 3px;
+        top: 59%;
+     }
+     #page8 #line5{
+        height: 3px;
+        top: 74%;
+     }
+     #page8 #links{
+        width: 60%;
+        height: 37%;
+        left: 27%;
+        top: 28%;
+    }
+    #page8 #links h3{
+        font-size: 22px;
+        top: 1%;
+        left: 18%;
+     }
+     #page8 #links h2{
+        top: 10%;
+        font-size: 19px;
+     }
+     #page8 #help{
+        width: 67%;
+        height: 26%;
+        left: 28%;
+        top: 60%;
+     }
+     #page8 #help h5{
+        font-size: 23px;
+        left: 18%;
+     }
+     #page8 #help #box1{
+        top: 38%;
+     }
+     #page8 #help h3{
+        font-size: 17px;
+     }
+     #page8 #help #box2{
+        top: 66%;
+     }
+     #page8 #help h3{
+        top: -20%;
+     }
+     #page8 #btmbar h2{
+        margin-left: 12%;
+        font-size: 18px;
+     }
+}
